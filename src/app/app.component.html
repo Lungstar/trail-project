@@ -1,0 +1,13 @@
+<div class="container">
+
+  <app-search ></app-search>
+
+</div>
+<div class="col-12 p-2">
+  <app-artist-detail></app-artist-detail>
+  <div *ngFor="let item of items">
+    <app-artist-container [name]="artistData.name" [year]="artistData.nb_album" [Album]="artistData.name" [image]="artistData.picture"></app-artist-container> 
+  </div>
+</div>
+
+<router-outlet></router-outlet>

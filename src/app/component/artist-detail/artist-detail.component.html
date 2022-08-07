@@ -1,0 +1,21 @@
+
+	<div class="container">
+        <div class="col-12">
+            <div>
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple112/v4/91/f5/ae/91f5aec9-6e3a-a869-49c0-48dcc1a43402/AppIcon-0-1x_U007emarketing-0-7-0-0-85-220-0.png/1200x600wa.png">
+                <p>{{apiDummyData.title}}</p>
+                <p>{{apiDummyData.id}} followers</p>
+            </div>
+            <div>
+            <mat-card>
+                <h3>Top tracks</h3>
+                <div *ngFor="let hero of tableData">
+                    <p>{{hero.id}}  {{hero.name}}</p>
+                      
+                    <mat-divider></mat-divider>
+                </div>
+            </mat-card>
+        </div>
+        </div> 
+        <app-artist-container [name]="apiDummyData.title" [year]="apiDummyData.album.title.release_date" [Album]="apiDummyData.album.title" [image]="apiDummyData.album.cover"></app-artist-container>    
+	</div>

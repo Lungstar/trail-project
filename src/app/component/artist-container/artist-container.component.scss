@@ -1,0 +1,20 @@
+.artist {
+	background-color: white;
+	img {
+		width: 100px;
+		height:100x;
+	}
+	h1 {
+		float: left;
+	    color: white;
+	    position: relative;
+	    text-shadow: 1px 1px 1px black;
+	    margin-top: -10%;
+	    font-family: Raleway, arial;
+	    letter-spacing: 1px;
+	}
+	h1, p, span {
+		margin-left: 2%;
+	}
+}
+
